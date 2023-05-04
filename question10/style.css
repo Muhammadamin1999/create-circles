@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.circle {
+    position: absolute;
+    animation: shrink 10s ease-out;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
