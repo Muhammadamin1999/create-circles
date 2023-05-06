@@ -10,7 +10,7 @@ body{
 .input[type="text"]{
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 5px 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
@@ -31,6 +31,34 @@ body{
 }
 .table tbody tr:nth-child(even){
     background-color:darkgray
+}
+.text-danger{
+    color: red;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.bottom-field{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn{
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.btn:hover{
+  background-color: orange;
 }
 /*responsive*/
 @media(max-width: 500px){

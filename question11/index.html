@@ -1,50 +1,32 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
 
     <title>Table</title>
-</head>
+  </head>
 
-<body>
-<input type="text" placeholder="Search..." class="input" id="input" >
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Country</th>
-            <th>ZipCode</th>
-        </tr>
-    </thead>
-    <tbody>
-          <tr>
-            <td data-label="ID">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-            <td data-label="Name">Lorem, ipsum dolor.</td>
-            <td data-label="Surname">Lorem, ipsum dolor.</td>
-            <td data-label="Email">Lorem, ipsum dolor hello.</td>
-            <td data-label="Phone">Lorem, ipsum dolor 78922.</td>
-            <td data-label="Address">Lorem, ipsum .</td>
-            <td data-label="City">Lorem, hello width.</td>
-            <td data-label="State">Lorem, ipsum .</td>
-            <td data-label="Country">Lorem, .</td>
-            <td data-label="ZipCode">ipsum dolor.</td>
-          </tr>
+  <body>
+    <input type="text" placeholder="Search..." class="input" id="search" />
+    <h3 id="error" class="text-center"></h3>
 
+    <table class="table" id="table"></table>
 
-    </tbody>
-  </table>
-<script src="script.js"></script>
-
-</body>
+    <div class="bottom-field">
+      <ul class="pagination">
+        <button class="btn" id="prev" onclick="myPrev()">Prev</button>
+        <p class="page"> </p>
+        <button class="btn" id="next" onclick="myNext()">Next</button>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
