@@ -96,7 +96,7 @@ function showtable(curArray, numOfPage) {
   } else {
     //   document.getElementById("error").innerHTML = "";
 
-    for (var i = (numOfPage - 1) * 10; i < numOfPage * 10; i++) {
+    for (let i = (numOfPage - 1) * 10; i < numOfPage * 10; i++) {
       tableHtml += ` 
                 <tr> <td>${curArray[i].id}</td> <td>${curArray[i].firstName}</td> 
                   <td>${curArray[i].lastName}</td> <td>${curArray[i].email}</td> 
@@ -160,21 +160,37 @@ function searchArray() {
         return newobj;
       }
     });
-    showtable(newarray);
+    console.log(newarray)
+    // showtable(newarray);
+    // if (!newarray) {
+    //     document.getElementById(
+    //       "error"
+    //     ).innerHTML = `<span class='text-danger '>Not Found!</span>`;
+    //   } else {
+    //     //   document.getElementById("error").innerHTML = "";
+    
+    //     for (var i = 0; i < newarray.length; i++) {
+    //       tableHtml += ` 
+    //                 <tr> <td>${newarray[i].id}</td> <td>${newarray[i].firstName}</td> 
+    //                   <td>${newarray[i].lastName}</td> <td>${newarray[i].email}</td> 
+    //                   <td>${newarray[i].phone}</td> <td>${newarray[i].address}</td>
+    //                   <td>${newarray[i].city}</td> <td>${newarray[i].state}</td>
+    //                   <td>${newarray[i].country}</td> <td>${newarray[i].zipCode}</td></tr>`;
+    //     }
+    //   }
+    //   tableHtml += `</tbody>`
+    //   tableEl.innerHTML = ""
+    //   tableEl.innerHTML = tableHtml;
   });
 }
 ////////////// Pagination /////////////////////
 
 const myNext = () => {
-
-//   if (numOfPage > maxPage) {
-//     numOfPage = 1;
-//   }
   numOfPage += 1;
   showtable(data, numOfPage);
 };
 
-function myPrev() {
+const myPrev = () => {
   if (numOfPage < 1) {
     numOfPage = 1;
   }
