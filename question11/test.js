@@ -48,7 +48,7 @@ function showtable(curArray, numOfPage, endOfArray) {
          <th>Country</th>
          <th>ZipCode</th>
       </tr> 
-      </thead><tbody>`;
+      </thead>`;
 
   
   

@@ -6,12 +6,13 @@ body {
 }
 
 .circle {
-    position: absolute;
-    animation: shrink 10s ease-out;
+    position: fixed;
+    /* animation: shrink 10s ease-out;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; */
     border-radius: 50%;
     border: 2px solid white;
+
 }
 
 @keyframes shrink {
